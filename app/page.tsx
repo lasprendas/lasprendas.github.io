@@ -205,7 +205,7 @@ export default function LandingPage() {
                 <Truck className="h-6 w-6 text-violet-300" />
               </div>
               <h4 className="text-lg font-medium text-gray-900 mb-2">Envio gratis</h4>
-              <p className="text-gray-600 text-justify">Envio gratuito a todo colombia por compras superiores a $90.000 / Aplican T&C</p>
+              <p className="text-gray-600 text-justify">Envio gratuito a todo colombia por compras superiores a $250.000 / Aplican T&C</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
