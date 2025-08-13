@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Star, Truck, Shield, Menu } from "lucide-react"
+import { SimpleMenu } from "@/components/custom/menu"
+import { Star, Truck, Shield } from "lucide-react"
 import Image from "next/image"
 
 export default function LandingPage() {
@@ -24,43 +25,17 @@ export default function LandingPage() {
     },
   ]
 
+  const navLinks = [
+    { href: "#collections", text: "Colecciones" },
+    { href: "#about", text: "¿Quiénes somos?" },
+    { href: "#benefits", text: "Beneficios" },
+    { href: "#contact", text: "Contáctanos" },
+  ]
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <a href="#" className="flex items-center gap-2">
-              <Image
-                src="/images/lp_logo.png"
-                alt="Las prendas Logo"
-                title="Las prendas"
-                width={45}
-                height={45}
-              />
-            </a>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#collections" className="text-gray-600 hover:text-gray-900 transition-colors">
-                Colecciones
-              </a>
-              <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">
-                ¿Quiénes somos?
-              </a>
-              <a href="#benefits" className="text-gray-600 hover:text-gray-900 transition-colors">
-                Beneficios
-              </a>
-              <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
-                Contáctanos
-              </a>
-            </div>
-            <div className="flex md:hidden items-center space-x-8">
-              <div className="w-12 h-12 flex items-center justify-center mx-auto">
-                <Menu className="h-6 w-6" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <SimpleMenu navLinks={navLinks} />
 
       {/* Hero Section */}
       <section className="relative bg-white">
