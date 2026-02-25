@@ -1,34 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { SimpleMenu } from "@/components/custom/menu"
-import { Star, Truck, Shield } from "lucide-react"
+import { Star, Truck, Shield, BotIcon, Shirt } from "lucide-react"
 import Image from "next/image"
 
 export default function LandingPage() {
-  const collections = [
-    {
-      id: "classic",
-      name: "Clásica",
-      description: "Elegancia cotidiana",
-      image: "/images/classic.png",
-    },
-    {
-      id: "irrepetible",
-      name: "Irrepetible",
-      description: "Estilos unicos",
-      image: "/images/irrepetible.png",
-    },
-    {
-      id: "encanto",
-      name: "Encanto",
-      description: "Estilos mágicos",
-      image: "/images/magic.png",
-    },
-  ]
+
 
   const navLinks = [
-    { href: "#collections", text: "Colecciones" },
-    { href: "#about", text: "¿Quiénes somos?" },
     { href: "#benefits", text: "Beneficios" },
+    { href: "#about", text: "¿Quiénes somos?" },
     { href: "#contact", text: "Contáctanos" },
   ]
 
@@ -44,36 +24,33 @@ export default function LandingPage() {
             <div className="space-y-6">
               <div>
                 <h2 className="text-5xl md:text-6xl font-light text-gray-900 leading-tight">
-                  Las prendas
+                  Las prendas,
                   <br />
                   <span className="magicletters magicrelative">
-                    <span className="magicletters magicrelative">
-                      hechas
-                      <span className="estrella e1"></span>
-                      <span className="estrella e3"></span>
-                    </span>
-                    <span className="magicletters magicrelative px-3">
-                      a tu
-                      <span className="estrella e2"></span>
-                    </span>
-                    <span className="magicletters magicrelative">
-                      medida
-                      <span className="estrella e4"></span>
-                      <span className="estrella e5"></span>
-                    </span>                    
+                    tu
+                    <span className="estrella e1"></span>
+                  </span>
+                  <span className="ml-3 magicletters magicrelative">
+                    Agente
+                    <span className="estrella e3"></span>
+                  </span>
+                  <span className="ml-3 magicletters magicrelative">
+                    de
+                    <span className="estrella e2"></span>
+                  </span>
+                  <span className="ml-3 magicletters magicrelative">
+                    Imagen
+                    <span className="estrella e4"></span>
+                    <span className="estrella e5"></span>
                   </span>
                 </h2>
                 <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-                  Descubre nuestras colecciones premium de ropa deportiva, donde el diseño y la calidad hacen magia.
+                  Descubre el poder de tu estilo con nuestro Agente de Imagen hecho con inteligencia artificial.
+                  Aprende a vestir con confianza y brilla en cada ocasión.
+                  Proximamente nuestra app estará disponible en Google Play y App Store.
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="#collections">
-                  <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3">
-                    Explorar colecciones
-                  </Button>
-                </a>
-              </div>
+
             </div>
             <div className="relative">
               <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
@@ -91,30 +68,36 @@ export default function LandingPage() {
       </section>
 
 
-      {/* Collections */}
-      <section id="collections" className="py-20 bg-gray-50">
+
+
+      {/* Benefits */}
+      <section id="benefits" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h3 className="text-3xl font-light text-gray-900 mb-4">Colecciones</h3>
+            <h3 className="text-3xl font-light text-gray-900 mb-4">Beneficios</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {collections.map((collection, index) => (
-              <div id={collection.id} key={index} className="group cursor-pointer">
-                <div className="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-                  <Image
-                    src={collection.image}
-                    alt={collection.name}
-                    width={400}
-                    height={500}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="text-center">
-                  <h4 className="text-xl font-medium text-gray-900 mb-2">{collection.name}</h4>
-                  <p className="text-gray-600">{collection.description}</p>
-                </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="h-6 w-6 text-orange-700" />
               </div>
-            ))}
+              <h4 className="text-lg font-medium text-gray-900 mb-2">Asesoría Experta</h4>
+              <p className="text-gray-600 text-justify">Recibe guía experta generada por nuestro AI, que comprende tus necesidades y te acompaña paso a paso para encontrar tu mejor estilo día a día.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shirt className="h-6 w-6 text-violet-300" />
+              </div>
+              <h4 className="text-lg font-medium text-gray-900 mb-2">Estilo Inteligente</h4>
+              <p className="text-gray-600 text-justify">Descubre qué prendas y accesorios te favorecen con lo que tengas en tu closet mediante nuestro AI experto.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="h-6 w-6 text-purple-400" />
+              </div>
+              <h4 className="text-lg font-medium text-gray-900 mb-2">Seguridad Personal</h4>
+              <p className="text-gray-600 text-justify">Camina con firmeza y proyecta tu mejor versión. Nuestro AI te brinda la seguridad de saber que siempre llevas el estilo que más te favorece.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -125,7 +108,7 @@ export default function LandingPage() {
           <div className="text-center mb-16">
             <h3 className="text-3xl font-light text-gray-900 mb-4">¿Quiénes somos?</h3>
             <p className="text-gray-600 max-w-2xl mx-auto text-justify">
-              En <strong>Las prendas</strong> nos dedicamos a crear ropa que te inspire a moverte sin que salgas de tu casa. Conoce a las personas que hacen la magia:
+              En <strong>Las prendas</strong> democratizamos el acceso al asesoramiento de imagen profesional. Conoce a quienes hacen la magia:
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-12 md:gap-16">
@@ -161,38 +144,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Benefits */}
-      <section id="benefits" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl font-light text-gray-900 mb-4">Beneficios</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="h-6 w-6 text-orange-700" />
-              </div>
-              <h4 className="text-lg font-medium text-gray-900 mb-2">Calidad</h4>
-              <p className="text-gray-600 text-justify">Reservamos las mejores telas con tecnológia de punta para entregarte prendas de moda inigualables.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Truck className="h-6 w-6 text-violet-300" />
-              </div>
-              <h4 className="text-lg font-medium text-gray-900 mb-2">Envio gratis</h4>
-              <p className="text-gray-600 text-justify">Envio gratuito a todo colombia por compras superiores a $250.000 / Aplican T&C</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-6 w-6 text-purple-400" />
-              </div>
-              <h4 className="text-lg font-medium text-gray-900 mb-2">Garantia</h4>
-              <p className="text-gray-600 text-justify">Todas nuestras prendas tienen garantia por 2 meses en caso de imperfecciones en las telas o las costuras / Aplican T&C.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer id="contact" className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -200,73 +151,38 @@ export default function LandingPage() {
             <div>
               <h4 className="text-xl font-light mb-4">Las prendas</h4>
               <p className="text-gray-400 text-sm">
-                Ubicación: Valle del cauca, Colombia
+                Ubicación: Bogotá, Colombia
+                <br />
+                Email: info@lasprendas.com
                 <br />
                 Telefóno: +57 321 4843367
-                <br />
-                Email: lasprendaso@gmail.com
               </p>
-            </div>
-            <div>
-              <h5 className="font-medium mb-4">Colecciones</h5>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a href="#classic" className="hover:text-white transition-colors">
-                    Clásica
-                  </a>
-                </li>
-                <li>
-                  <a href="#irrepetible" className="hover:text-white transition-colors">
-                    Irrepetible
-                  </a>
-                </li>
-                <li>
-                  <a href="#encanto" className="hover:text-white transition-colors">
-                    Encanto
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-medium mb-4">Ayuda</h5>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Guía de tallas
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Devoluciones
-                  </a>
-                </li>
-              </ul>
             </div>
             <div>
               <h5 className="font-medium mb-4">Conéctate</h5>
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <a
-                  href="https://www.instagram.com/lasprendaso"
-                  target="_blank"
-                  className="hover:text-white transition-colors"
+                    href="https://www.instagram.com/lasprendaso"
+                    target="_blank"
+                    className="hover:text-white transition-colors"
                   >
                     Instagram
                   </a>
                 </li>
                 <li>
                   <a
-                  href="https://www.facebook.com/lasprendasoo"
-                  target="_blank"
-                  className="hover:text-white transition-colors"
+                    href="https://www.facebook.com/lasprendaso"
+                    target="_blank"
+                    className="hover:text-white transition-colors"
                   >
                     Facebook
                   </a>
                 </li>
                 <li>
                   <a href="https://www.tiktok.com/@lasprendaso"
-                  target="_blank"
-                  className="hover:text-white transition-colors"
+                    target="_blank"
+                    className="hover:text-white transition-colors"
                   >
                     Tiktok
                   </a>
@@ -275,7 +191,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Las Prendas. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Las prendas. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
