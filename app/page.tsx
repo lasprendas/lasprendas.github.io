@@ -26,22 +26,24 @@ export default function LandingPage() {
                 <h2 className="text-5xl md:text-6xl font-light text-gray-900 leading-tight">
                   Las prendas,
                   <br />
-                  <span className="magicletters magicrelative">
-                    tu
-                    <span className="estrella e1"></span>
-                  </span>
-                  <span className="ml-3 magicletters magicrelative">
-                    Agente
-                    <span className="estrella e3"></span>
-                  </span>
-                  <span className="ml-3 magicletters magicrelative">
-                    de
-                    <span className="estrella e2"></span>
-                  </span>
-                  <span className="ml-3 magicletters magicrelative">
-                    Imagen
-                    <span className="estrella e4"></span>
-                    <span className="estrella e5"></span>
+                  <span className="inline-flex flex-wrap gap-x-3 mt-2">
+                    <span className="magicletters magicrelative">
+                      tu
+                      <span className="estrella e1"></span>
+                    </span>
+                    <span className="magicletters magicrelative">
+                      Agente
+                      <span className="estrella e3"></span>
+                    </span>
+                    <span className="magicletters magicrelative">
+                      de
+                      <span className="estrella e2"></span>
+                    </span>
+                    <span className="magicletters magicrelative">
+                      Imagen
+                      <span className="estrella e4"></span>
+                      <span className="estrella e5"></span>
+                    </span>
                   </span>
                 </h2>
                 <p className="mt-6 text-xl text-gray-600 leading-relaxed">

@@ -117,6 +117,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -134,36 +135,71 @@
   .magicabsolute {
     position: absolute;
   }
+
   .magicrelative {
     position: relative;
   }
+
   /* Estrella real con rayos */
-  .estrella{
-    position:absolute; pointer-events:none;
-    width:8px; height:8px;
+  .estrella {
+    position: absolute;
+    pointer-events: none;
+    width: 8px;
+    height: 8px;
     background: gold;
-    clip-path: polygon(
-      50% 0%,
-      60% 40%,
-      100% 50%,
-      60% 60%,
-      50% 100%,
-      40% 60%,
-      0% 50%,
-      40% 40%
-    );
+    clip-path: polygon(50% 0%,
+        60% 40%,
+        100% 50%,
+        60% 60%,
+        50% 100%,
+        40% 60%,
+        0% 50%,
+        40% 40%);
     animation: brillo 1.6s ease-in-out infinite;
-    box-shadow: 0 0 6px rgba(255,215,0,0.9);
+    box-shadow: 0 0 6px rgba(255, 215, 0, 0.9);
   }
 
-  .e1{ top:5px; left:20px;  animation-delay:0s; }
-  .e2{ top:8px; left:13px; animation-delay:.3s; }
-  .e3{ top:55px; left:90px;  animation-delay:.6s; }
-  .e4{ top:1px; left:105px; animation-delay:.9s; }
-  .e5{ top:60px; left:20px; animation-delay:1.2s; }
+  .e1 {
+    top: 5px;
+    left: 20px;
+    animation-delay: 0s;
+  }
 
-  @keyframes brillo{
-    0%,100%{ transform:scale(1) rotate(0deg); opacity:1 }
-    50%    { transform:scale(1.8) rotate(45deg); opacity:.6 }
+  .e2 {
+    top: 8px;
+    left: 13px;
+    animation-delay: .3s;
+  }
+
+  .e3 {
+    top: 55px;
+    left: 90px;
+    animation-delay: .6s;
+  }
+
+  .e4 {
+    top: 1px;
+    left: 105px;
+    animation-delay: .9s;
+  }
+
+  .e5 {
+    top: 60px;
+    left: 20px;
+    animation-delay: 1.2s;
+  }
+
+  @keyframes brillo {
+
+    0%,
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1
+    }
+
+    50% {
+      transform: scale(1.8) rotate(45deg);
+      opacity: .6
+    }
   }
 }
