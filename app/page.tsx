@@ -53,13 +53,13 @@ export default function LandingPage() {
 
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
+              <div className="bg-gray-100 rounded-lg overflow-hidden">
                 <Image
                   src="/images/lasprendas-app.png"
                   alt="Mannequins displaying Las prendas collection"
-                  width={600}
-                  height={600}
-                  className="w-full h-full object-cover"
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Las prendas. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Las prendas. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
