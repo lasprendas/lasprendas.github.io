@@ -55,7 +55,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/mannequins-hero.png"
+                  src="/images/lasprendas-app.png"
                   alt="Mannequins displaying Las prendas collection"
                   width={600}
                   height={600}
