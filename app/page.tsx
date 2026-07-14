@@ -194,6 +194,9 @@ export default function LandingPage() {
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2026 Las prendas. Todos los derechos reservados.</p>
+            <a href="/privacy" className="mt-2 inline-block text-sm underline underline-offset-4 hover:text-white transition-colors">
+              Política de privacidad
+            </a>
           </div>
         </div>
       </footer>
