@@ -197,6 +197,9 @@ export default function LandingPage() {
             <a href="/privacy" className="mt-2 inline-block text-sm underline underline-offset-4 hover:text-white transition-colors">
               Política de privacidad
             </a>
+            <a href="/delete-account" className="mt-2 ml-4 inline-block text-sm underline underline-offset-4 hover:text-white transition-colors">
+              Eliminar cuenta
+            </a>
           </div>
         </div>
       </footer>

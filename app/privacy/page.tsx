@@ -96,7 +96,10 @@ export default function PrivacyPage() {
           <section className={sectionClassName}>
             <h2 className="text-2xl font-medium text-gray-900">5. Conservación y seguridad</h2>
             <p className="mt-3">
-              Conservamos los datos solo durante el tiempo necesario para prestar el servicio, atender obligaciones legales o resolver reclamaciones. Aplicamos medidas técnicas y organizativas razonables para evitar accesos, usos, pérdidas o divulgaciones no autorizados. Sin embargo, ningún servicio digital puede garantizar seguridad absoluta.
+              Las fotografías originales, imágenes de referencia de contorno, imágenes de prendas, maniquíes digitales y visualizaciones generadas se almacenan en infraestructura de DigitalOcean para que estén disponibles en la aplicación. Conservamos estos datos mientras tu cuenta esté activa.
+            </p>
+            <p className="mt-3">
+              Cuando confirmes una solicitud de eliminación de cuenta, eliminaremos estos archivos y los datos asociados dentro de un plazo máximo de 30 días. Aplicamos medidas técnicas y organizativas razonables para evitar accesos, usos, pérdidas o divulgaciones no autorizados. Sin embargo, ningún servicio digital puede garantizar seguridad absoluta.
             </p>
           </section>
 
@@ -104,7 +107,8 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-medium text-gray-900">6. Tus derechos y cómo ejercerlos</h2>
             <p className="mt-3">
               Puedes conocer, actualizar, rectificar o solicitar la supresión de tus datos; pedir prueba de tu autorización; revocar el consentimiento cuando corresponda; y presentar consultas o reclamos sobre su tratamiento. Para ejercerlos, escríbenos a{" "}
-              <a className="font-medium text-gray-900 underline underline-offset-4 hover:text-gray-600" href="mailto:info@lasprendas.com">info@lasprendas.com</a> indicando tu solicitud y el correo asociado a tu cuenta. También puedes dejar de usar las funciones de generación de maniquí en cualquier momento.
+              <a className="font-medium text-gray-900 underline underline-offset-4 hover:text-gray-600" href="mailto:info@lasprendas.com">info@lasprendas.com</a> indicando tu solicitud y el correo asociado a tu cuenta. También puedes solicitar la eliminación de tu cuenta y sus datos asociados desde nuestra{" "}
+              <Link href="/delete-account" className="font-medium text-gray-900 underline underline-offset-4 hover:text-gray-600">página de eliminación de cuenta</Link>. También puedes dejar de usar las funciones de generación de maniquí en cualquier momento.
             </p>
           </section>
 
